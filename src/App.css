@@ -1,0 +1,126 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Add this to your global CSS */
+.emoji-mart-emoji svg {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+/* Target Twemoji images specifically */
+img[src*="twemoji"] {
+  width: 30px !important;
+  height: 30px !important;
+  vertical-align: middle !important;
+}
+
+/* Backup selectors in case the above doesn't work */
+.inline-block.mr-2 img,
+[data-lov-name="Twemoji"] img,
+span[class="undefined"] img {
+  width: 30px !important;
+  height: 30px !important;
+  vertical-align: middle !important;
+}
+
+/* Style the parent span to control emoji size */
+.talksharp-emoji {
+  font-size: 50px !important;
+}
+
+/* Ensure the img inside maintains aspect ratio */
+.talksharp-emoji img {
+  display: inline-block !important;
+  width: 1em !important;
+  height: 1em !important;
+}
+
+/* Override Twemoji styles with high specificity */
+.inline-block.mr-2 span[class*="undefined"] img[src*="twemoji"],
+.talksharp-emoji img[src*="twemoji"],
+img[alt^="🇬"],
+img[alt^="🇳"],
+img[alt^="🇰"] {
+  width: 40px !important;
+  height: 40px !important;
+  vertical-align: middle !important;
+  margin: 0 !important;
+}
+
+/* Target emoji wrapper */
+.emoji-wrapper {
+  font-size: 60px !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* These are secondary approaches that might help in some browsers */
+.emoji-wrapper img {
+  width: 1em !important;
+  height: 1em !important;
+  vertical-align: middle !important;
+  margin: 0 !important;
+}
+
+/* Override any inline styles from Twemoji */
+span[class*="undefined"] img[src*="twemoji"] {
+  width: 1em !important;
+  height: 1em !important;
+}
+
+/* Custom Twemoji styling */
+.custom-twemoji {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+}
+
+.custom-twemoji img.twemoji-img {
+  width: 1em !important;
+  height: 1em !important;
+  vertical-align: middle !important;
+  margin: 0 !important;
+}
