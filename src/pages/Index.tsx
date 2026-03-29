@@ -21,7 +21,7 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <Navbar onOpenWaitlist={openModal} />
       <SEO
-				title="TalkSharp | Learn african languages stay rooted"
+				title="TalkSharp – Learn African Languages With AI"
 				description="Learn African languages fast, vibe with the culture, and speak like a local"
 				url={window.location.origin}
 				structuredData={{
