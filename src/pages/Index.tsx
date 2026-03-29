@@ -9,6 +9,7 @@ import MissionSection from '@/components/MissionSection';
 import CallToActionSection from '@/components/CallToActionSection';
 import Footer from '@/components/Footer';
 import WaitlistModal from '@/components/WaitlistModal';
+import SEO from '@/components/SEO';
 
 const Index = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -19,6 +20,17 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       <Navbar onOpenWaitlist={openModal} />
+      <SEO
+				title="TalkSharp – Learn African Languages With AI"
+				description="Learn African languages fast, vibe with the culture, and speak like a local"
+				url={window.location.origin}
+				structuredData={{
+					"@context": "https://schema.org",
+					"@type": "Course",
+					name: "TalkSharp",
+					description: "Learn African languages fast, vibe with the culture, and speak like a local"
+				}}
+			/>
       <main>
         <HeroSection onOpenWaitlist={openModal} />
         {/* <FeaturesSection /> */}
