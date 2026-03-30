@@ -1,1 +1,0 @@
-export const executablePath = '/usr/bin/chromium-browser';
