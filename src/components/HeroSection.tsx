@@ -113,7 +113,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onOpenWaitlist }) => {
               className="w-full sm:w-auto sm:mx-auto text-lg rounded-3xl px-10 py-4"
               onClick={onOpenWaitlist}
             >
-              Join the Waitlist
+              Start Learning
             </AppButton>
           </div>
         </div>

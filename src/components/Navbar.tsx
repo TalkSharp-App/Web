@@ -17,7 +17,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenWaitlist }) => {
         className="bg-black text-white hover:bg-gray-800 rounded-2xl px-5 py-4 text-base h-auto"
         onClick={onOpenWaitlist}
       >
-        Join the Waitlist
+        Start Learning
       </Button>
 
       </div>
