@@ -8,7 +8,7 @@ interface HeroSectionProps {
 
 const HeroSection: React.FC<HeroSectionProps> = ({ onOpenWaitlist }) => {
   return (
-    <section className="w-full px-6 md:px-10 pt-36 md:pt-36 pb-24 md:pb-36 relative overflow-hidden bg-[url('/assets/hero-background.jpg')] bg-cover bg-center bg-no-repeat">
+    <section className="w-full px-6 md:px-10 pt-36 md:pt-36 pb-24 md:pb-36 relative overflow-hidden bg-cover bg-center bg-no-repeat">
       {/* Background decorations */}
       <div className="absolute inset-0 z-0 opacity-50">
         {/* Define a grid with fixed positions */}
